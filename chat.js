@@ -55,7 +55,8 @@
         });
 
         const data = await res.json();
-        chat.innerHTML += `<div><b>Bot:</b> ${data.reply}</div>`;
+console.log("FULL RESPONSE:", data);
+chat.innerHTML += `<div><b>Bot:</b> ${JSON.stringify(data)}</div>`;
         chat.scrollTop = chat.scrollHeight;
 
       } catch (err) {
