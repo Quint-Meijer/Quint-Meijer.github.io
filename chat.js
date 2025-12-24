@@ -46,7 +46,7 @@
       chat.innerHTML += `<div><b>You:</b> ${message}</div>`;
 
       try {
-        const res = await fetch("https://quintm.app.n8n.cloud/webhook/bb466536-cf59-4e4e-abe5-49a04b03c70c/chat", {
+        const res = await fetch("https://quintm.app.n8n.cloud/webhook/0c7cb2b0-bff2-46e7-9bf9-8e42f7e420f2/chat", {
           method: "POST",
           headers: {
             "Content-Type": "application/json"
