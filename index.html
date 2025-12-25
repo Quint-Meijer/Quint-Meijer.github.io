@@ -89,30 +89,37 @@
 
 <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
 
-  
 <style>
-  /* Mobile-only fixes */
-  @media (max-width: 600px) {
-    .n8n-chat-window {
-      max-height: 70vh !important;
-      bottom: 10px !important;
-      right: 10px !important;
-      left: 10px !important;
-      width: auto !important;
-      border-radius: 12px !important;
-    }
-  }
-</style>
-<style>
-  /* Bigger launcher icon on mobile */
   @media (max-width: 600px) {
     .n8n-chat-launcher {
       transform: scale(1.2);
       bottom: 20px !important;
       right: 20px !important;
     }
+
+    .n8n-chat-window {
+      position: fixed !important;
+      top: 50% !important;
+      left: 50% !important;
+      transform: translate(-50%, -50%) !important;
+      width: 92vw !important;
+      height: 85vh !important;
+      max-height: 85vh !important;
+      border-radius: 16px !important;
+    }
   }
 </style>
+
+<script type="module">
+  import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+
+  createChat({
+    webhookUrl: 'YOUR_WEBHOOK_URL',
+    mode: 'window',
+    position: 'bottom-right'
+  });
+</script>
+
 
   
 <script type="module">
