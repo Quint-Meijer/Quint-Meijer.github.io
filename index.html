@@ -89,6 +89,23 @@
 
 <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
 
+  
+<style>
+  /* Mobile-only fixes */
+  @media (max-width: 600px) {
+    .n8n-chat-window {
+      max-height: 70vh !important;
+      bottom: 10px !important;
+      right: 10px !important;
+      left: 10px !important;
+      width: auto !important;
+      border-radius: 12px !important;
+    }
+  }
+</style>
+
+
+  
 <script type="module">
   import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
 
