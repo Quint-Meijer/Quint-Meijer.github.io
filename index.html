@@ -50,6 +50,16 @@
 </section>
 
 <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+<style>
+  @media (max-width: 600px) {
+    :root {
+      --chat--toggle--size: 72px;
+      --chat--window--width: 94vw;
+      --chat--window--height: 85vh;
+      --chat--message--font-size: 1.05rem;
+    }
+  }
+</style>
 <script type="module">
   import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
 
