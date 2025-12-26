@@ -10,53 +10,65 @@
   <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
 
   <!-- Mobile chat tweaks -->
- <style>
+<style>
   :root {
-    /* Header */
+    /* ===== HEADER ===== */
     --chat--header--background: #000000;
     --chat--header--color: #ffffff;
 
-    /* Chat window background */
+    /* ===== CHAT WINDOW ===== */
     --chat--color-light: #ffffff;
     --chat--color-light-shade-50: #ffffff;
     --chat--color-light-shade-100: #ffffff;
 
-    /* Bot message */
+    /* ===== MESSAGES ===== */
     --chat--message--bot--background: #ffffff;
     --chat--message--bot--color: #000000;
 
-    /* User message */
     --chat--message--user--background: #e5e5e5;
     --chat--message--user--color: #000000;
 
-    /* Input area */
+    /* ===== INPUT ===== */
     --chat--textarea--height: 52px;
 
-    /* Toggle button */
+    /* ===== TOGGLE BUTTON ===== */
     --chat--toggle--size: 64px;
     --chat--toggle--background: #000000;
     --chat--toggle--hover--background: #1a1a1a;
     --chat--toggle--active--background: #000000;
     --chat--toggle--color: #ffffff;
 
-    /* Shape */
+    /* ===== SHAPE ===== */
     --chat--border-radius: 18px;
 
-    /* Typography */
+    /* ===== TEXT ===== */
     --chat--message--font-size: 1rem;
   }
 
-  /* Window border */
+  /* Chat window border */
   .n8n-chat__window {
     border: 1px solid #e5e5e5;
   }
 
-  /* Message bubble polish */
-  .n8n-chat__message {
+  /* ===== MESSAGE BUBBLES ===== */
+  .n8n-chat__message--bot {
+    background: #ffffff;
+    color: #000000;
     border-radius: 18px;
+    padding: 14px 18px;
+    border: 1px solid #e0e0e0;
+    max-width: 85%;
   }
 
-  /* Input field styling */
+  .n8n-chat__message--user {
+    background: #e5e5e5;
+    color: #000000;
+    border-radius: 18px;
+    padding: 14px 18px;
+    max-width: 85%;
+  }
+
+  /* ===== INPUT FIELD ===== */
   .n8n-chat__input textarea {
     background: #ffffff;
     border-radius: 999px;
@@ -64,12 +76,12 @@
     padding: 14px 18px;
   }
 
-  /* Toggle shadow */
+  /* ===== TOGGLE SHADOW ===== */
   .n8n-chat__toggle {
     box-shadow: 0 12px 30px rgba(0,0,0,0.4);
   }
 
-  /* 📱 Mobile */
+  /* ===== MOBILE ===== */
   @media (max-width: 600px) {
     :root {
       --chat--toggle--size: 72px;
@@ -78,6 +90,7 @@
     }
   }
 </style>
+
 
 
 
