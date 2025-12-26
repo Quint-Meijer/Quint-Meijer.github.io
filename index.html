@@ -11,15 +11,57 @@
 
   <!-- Mobile chat tweaks -->
   <style>
-    @media (max-width: 600px) {
-      :root {
-        --chat--toggle--size: 72px;
-        --chat--window--width: 94vw;
-        --chat--window--height: 85vh;
-        --chat--message--font-size: 1.05rem;
-      }
+  :root {
+    /* Core colors */
+    --chat--color--primary: #0f0f0f;
+    --chat--color--primary-shade-50: #1a1a1a;
+    --chat--color--primary--shade-100: #000000;
+
+    --chat--color--secondary: #1f1f1f;
+
+    --chat--color-white: #ffffff;
+    --chat--color-light: #141414;
+    --chat--color-light-shade-50: #1c1c1c;
+    --chat--color-light-shade-100: #2a2a2a;
+
+    --chat--color-dark: #000000;
+
+    /* Messages */
+    --chat--message--bot--background: #141414;
+    --chat--message--bot--color: #ffffff;
+
+    --chat--message--user--background: #000000;
+    --chat--message--user--color: #ffffff;
+
+    /* Header */
+    --chat--header--background: #000000;
+    --chat--header--color: #ffffff;
+
+    /* Toggle button */
+    --chat--toggle--size: 64px;
+    --chat--toggle--background: #000000;
+    --chat--toggle--hover--background: #1a1a1a;
+    --chat--toggle--active--background: #000000;
+    --chat--toggle--color: #ffffff;
+
+    /* Shape */
+    --chat--border-radius: 14px;
+  }
+
+  /* Floating button shadow */
+  .n8n-chat__toggle {
+    box-shadow: 0 12px 30px rgba(0,0,0,0.5);
+  }
+
+  /* Mobile tuning */
+  @media (max-width: 600px) {
+    :root {
+      --chat--toggle--size: 72px;
+      --chat--window--width: 94vw;
+      --chat--window--height: 85vh;
     }
-  </style>
+  }
+</style>
 </head>
 
 <body>
