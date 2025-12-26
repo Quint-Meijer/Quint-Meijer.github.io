@@ -12,48 +12,41 @@
   <!-- Mobile chat tweaks -->
   <style>
   :root {
-    /* Core colors */
-    --chat--color--primary: #0f0f0f;
-    --chat--color--primary-shade-50: #1a1a1a;
-    --chat--color--primary--shade-100: #000000;
+    /* Chat window */
+    --chat--color-light: #111111;
+    --chat--color-light-shade-50: #161616;
+    --chat--color-light-shade-100: #222222;
 
-    --chat--color--secondary: #1f1f1f;
-
-    --chat--color-white: #ffffff;
-    --chat--color-light: #141414;
-    --chat--color-light-shade-50: #1c1c1c;
-    --chat--color-light-shade-100: #2a2a2a;
-
-    --chat--color-dark: #000000;
+    /* Header */
+    --chat--header--background: #0d0d0d;
+    --chat--header--color: #ffffff;
 
     /* Messages */
     --chat--message--bot--background: #141414;
     --chat--message--bot--color: #ffffff;
 
-    --chat--message--user--background: #000000;
+    --chat--message--user--background: #1f1f1f;
     --chat--message--user--color: #ffffff;
-
-    /* Header */
-    --chat--header--background: #000000;
-    --chat--header--color: #ffffff;
 
     /* Toggle button */
     --chat--toggle--size: 64px;
-    --chat--toggle--background: #000000;
-    --chat--toggle--hover--background: #1a1a1a;
-    --chat--toggle--active--background: #000000;
+    --chat--toggle--background: #1a1a1a;
+    --chat--toggle--hover--background: #2a2a2a;
+    --chat--toggle--active--background: #111111;
     --chat--toggle--color: #ffffff;
 
     /* Shape */
-    --chat--border-radius: 14px;
+    --chat--border-radius: 16px;
   }
 
-  /* Floating button shadow */
   .n8n-chat__toggle {
-    box-shadow: 0 12px 30px rgba(0,0,0,0.5);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.6);
   }
 
-  /* Mobile tuning */
+  .n8n-chat__window {
+    border: 1px solid #222;
+  }
+
   @media (max-width: 600px) {
     :root {
       --chat--toggle--size: 72px;
@@ -62,6 +55,7 @@
     }
   }
 </style>
+
 </head>
 
 <body>
