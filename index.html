@@ -1,80 +1,84 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <title>IronFit Gym</title>
 
+  <!-- n8n chat CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
+
+  <!-- Mobile chat tweaks -->
+  <style>
+    @media (max-width: 600px) {
+      :root {
+        --chat--toggle--size: 72px;
+        --chat--window--width: 94vw;
+        --chat--window--height: 85vh;
+        --chat--message--font-size: 1.05rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header style="padding:40px; background:#111; color:white; text-align:center;">
+  <h1>IronFit Gym</h1>
+  <p>Train harder. Get stronger.</p>
+</header>
+
+<section style="padding:40px;">
+  <h2>Welcome</h2>
+  <p>This is a demo gym website.</p>
+</section>
 
 <section style="padding:40px;">
   <h2>Classes</h2>
-  <p>
-    We offer strength training, HIIT, cardio, and group fitness classes
-    throughout the week.
-  </p>
+  <p>We offer strength training, HIIT, cardio, and group fitness classes.</p>
 </section>
 
 <section style="padding:40px; background:#f4f4f4;">
   <h2>Personal Training</h2>
-  <p>
-    Our certified trainers will build a custom plan based on your goals,
-    schedule, and fitness level.
-  </p>
+  <p>Our certified trainers build custom plans for your goals.</p>
 </section>
 
 <section style="padding:40px;">
   <h2>Opening Hours</h2>
   <p>
-    Monday – T: 6am – 10pm<br />
-    Saturday: 8am – 8pm<br />
-    Sunday: 8am – 6pm
+    Mon–Fri: 6am–10pm<br />
+    Sat: 8am–8pm<br />
+    Sun: 8am–6pm
   </p>
 </section>
 
 <section style="padding:40px; background:#f4f4f4;">
   <h2>Contact Us</h2>
-  <p>
-    Email: info@ironfitgym.com<br />
-    Phone: 01234 567890
-  </p>
+  <p>Email: info@ironfitgym.com<br />Phone: 01234 567890</p>
 </section>
 
 <footer style="padding:40px; background:#111; color:white; text-align:center;">
-  <p>© 2025 Iron Fit Gym. All rights reserved.</p>
+  © 2025 IronFit Gym
 </footer>
-<header>
-  <h1>IronFit Gym</h1>
-  <p>Train harder. Get stronger.</p>
-</header>
 
-<section>
-  <h2>Welcome</h2>
-  <p>This is a demo gym website.</p>
-</section>
-
-<link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
-<style>
-  @media (max-width: 600px) {
-    :root {
-      --chat--toggle--size: 72px;
-      --chat--window--width: 94vw;
-      --chat--window--height: 85vh;
-      --chat--message--font-size: 1.05rem;
-    }
-  }
-</style>
+<!-- n8n chat script -->
 <script type="module">
   import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
 
   createChat({
     webhookUrl: 'https://quintm.app.n8n.cloud/webhook/db62d570-b1ac-4af1-a689-db4c38edee50/chat',
-
     showWelcomeScreen: true,
     initialMessages: [
       "👋 Welcome to IronFit Gym",
       "I can help with memberships, class times, pricing, and personal training."
     ],
-
     loadPreviousSession: true
   });
 </script>
+
+</body>
+</html>
 
 
 </body>
