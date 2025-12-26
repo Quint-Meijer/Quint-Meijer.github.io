@@ -51,19 +51,19 @@
 
 <link href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css" rel="stylesheet" />
 <script type="module">
-	import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
+  import { createChat } from 'https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js';
 
-	createChat({
-		webhookUrl: 'https://quintm.app.n8n.cloud/webhook/db62d570-b1ac-4af1-a689-db4c38edee50/chat'
-			
-		showWelcomeScreen: true,
-        initialMessages: [
-          "👋 Welcome to Physical Culture",
-          "I can help with memberships, class times, pricing, and personal training."
-        ],
+  createChat({
+    webhookUrl: 'https://quintm.app.n8n.cloud/webhook/db62d570-b1ac-4af1-a689-db4c38edee50/chat',
 
-        loadPreviousSession: true
-	});
+    showWelcomeScreen: true,
+    initialMessages: [
+      "👋 Welcome to IronFit Gym",
+      "I can help with memberships, class times, pricing, and personal training."
+    ],
+
+    loadPreviousSession: true
+  });
 </script>
 
 
