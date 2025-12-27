@@ -21,54 +21,45 @@
     --chat--color-light-shade-50: #ffffff;
     --chat--color-light-shade-100: #ffffff;
 
-    /* ===== MESSAGES ===== */
-    --chat--message--bot--background: #ffffff;
-    --chat--message--bot--color: #000000;
-
-    --chat--message--user--background: #e5e5e5;
-    --chat--message--user--color: #000000;
-
     /* ===== INPUT ===== */
     --chat--textarea--height: 52px;
 
-    /* ===== TOGGLE BUTTON ===== */
+    /* ===== TOGGLE ===== */
     --chat--toggle--size: 64px;
     --chat--toggle--background: #000000;
     --chat--toggle--hover--background: #1a1a1a;
     --chat--toggle--active--background: #000000;
     --chat--toggle--color: #ffffff;
-
-    /* ===== SHAPE ===== */
-    --chat--border-radius: 18px;
-
-    /* ===== TEXT ===== */
-    --chat--message--font-size: 1rem;
   }
 
-  /* Chat window border */
+  /* ===== CHAT WINDOW ===== */
   .n8n-chat__window {
     border: 1px solid #e5e5e5;
   }
 
-  /* ===== MESSAGE BUBBLES ===== */
-  .n8n-chat__message--bot {
+  /* ===== FORCE PILL BUBBLES (ALL MESSAGES) ===== */
+  .n8n-chat__message,
+  .n8n-chat__message-content {
+    border-radius: 999px !important;
+    padding: 14px 18px !important;
+    max-width: 85%;
+    display: inline-block;
+  }
+
+  /* AI messages */
+  .n8n-chat__message--bot .n8n-chat__message-content {
     background: #ffffff;
     color: #000000;
-    border-radius: 18px;
-    padding: 14px 18px;
     border: 1px solid #e0e0e0;
-    max-width: 85%;
   }
 
-  .n8n-chat__message--user {
+  /* User messages */
+  .n8n-chat__message--user .n8n-chat__message-content {
     background: #e5e5e5;
     color: #000000;
-    border-radius: 18px;
-    padding: 14px 18px;
-    max-width: 85%;
   }
 
-  /* ===== INPUT FIELD ===== */
+  /* ===== INPUT FIELD (PILL) ===== */
   .n8n-chat__input textarea {
     background: #ffffff;
     border-radius: 999px;
@@ -76,7 +67,7 @@
     padding: 14px 18px;
   }
 
-  /* ===== TOGGLE SHADOW ===== */
+  /* ===== TOGGLE BUTTON ===== */
   .n8n-chat__toggle {
     box-shadow: 0 12px 30px rgba(0,0,0,0.4);
   }
@@ -90,6 +81,7 @@
     }
   }
 </style>
+
 
 
 
